@@ -134,7 +134,7 @@ namespace LiveSplit.TheoryComparisonGenerator.Comparisons
 
             TimeSpan? goalTime = null;
             if (Run[Run.Count - 1].PersonalBestSplitTime[method].HasValue)
-                goalTime = sobvalue + new TimeSpan(0, 0, (int)sobvalue?.Hours, (int)(sobvalue?.Minutes), (int)((double)(sobvalue?.Seconds / 0.06)));
+                goalTime = target;
 
             var runSum = TimeSpan.Zero;
             var outputSplits = new List<TimeSpan>();
